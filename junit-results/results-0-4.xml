@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Claim Free MBs in MyTelenor App" timestamp="2024-06-14T09:39:40" time="4.373" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Claim Free MBs in MyTelenor App"/>
+      <property name="capabilities" value="android.055832505e002417"/>
+      <property name="featureFile" value="file:///C:/Users/Farhat.Mehmood/Documents/appium/mta%20framework/features/freembs.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-android.055832505e002417.Claim Free MBs in MyTelenor App" name="Navigate to Free MBs section and claim Free MBs" time="4.363">
+      <system-out><![CDATA[
+✅ When I navigate to the Free MBs section✅ Then I should be able to claim Free MBs
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

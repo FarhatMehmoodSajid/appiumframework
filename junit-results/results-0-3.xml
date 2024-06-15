@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="Digital Services in MyTelenor App" timestamp="2024-06-14T09:38:16" time="69.148" tests="1" failures="1" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="featureName" value="Digital Services in MyTelenor App"/>
+      <property name="capabilities" value="android.055832505e002417"/>
+      <property name="featureFile" value="file:///C:/Users/Farhat.Mehmood/Documents/appium/mta%20framework/features/digitalservice.feature"/>
+    </properties>
+    <testcase classname="CucumberJUnitReport-android.055832505e002417.Digital Services in MyTelenor App" name="Navigate to Digital Services and activate a specific service" time="69.134">
+      <failure/>
+      <error message="Error: function timed out, ensure the promise resolves within 60000 milliseconds"/>
+      <system-out><![CDATA[
+✅ When I open the hamburger menu✅ And I navigate to Digital Services✅ And I open all services❗ And I select Music & Video⚠️ And I open the service details for SmartTunes
+⚠️ Then I should be able to activate the service
+]]></system-out>
+      <system-err><![CDATA[
+Error: function timed out, ensure the promise resolves within 60000 milliseconds
+    at Timeout.<anonymous> (C:\Users\Farhat.Mehmood\Documents\appium\mta framework\node_modules\@cucumber\cucumber\src\time.ts:52:14)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7)
+]]></system-err>
+    </testcase>
+  </testsuite>
+</testsuites>
