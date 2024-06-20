@@ -9,7 +9,7 @@ Given('I am on the login page', async () => {
 });
 
 When('I login with valid credentials', async () => {
-    const username = '03406969504';
+    const username = '03405045207';
     const password = 'telenor123';
     await LoginPage.login(username, password);
 });

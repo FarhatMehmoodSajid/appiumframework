@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="1" failures="0" errors="0" skipped="0">
-  <testsuite name="Login functionality" timestamp="2024-06-14T09:36:25" time="31.626" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="Login functionality" timestamp="2024-06-19T22:11:56" time="33.536" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="featureName" value="Login functionality"/>
       <property name="capabilities" value="android.055832505e002417"/>
       <property name="featureFile" value="file:///C:/Users/Farhat.Mehmood/Documents/appium/mta%20framework/features/login.feature"/>
     </properties>
-    <testcase classname="CucumberJUnitReport-android.055832505e002417.Login functionality" name="User logs in with valid credentials" time="31.611">
+    <testcase classname="CucumberJUnitReport-android.055832505e002417.Login functionality" name="User logs in with valid credentials" time="33.443">
       <system-out><![CDATA[
 ✅ Given I am on the login page
 ✅ When I login with valid credentials✅ And I should close Rtdm Popup✅ Then I should close Home add

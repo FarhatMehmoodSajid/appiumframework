@@ -32,7 +32,7 @@ When('I should activate the offer', async () => {
     console.log('Offers test completed successfully!');
 });
 When('I should confirm the offer', async () => {
-    await OffersPage.activateOffer();
+    await OffersPage.confirmactivateOffer();
     console.log('Offers test completed successfully!');
 });
 Then('I should show success screen', async () => {

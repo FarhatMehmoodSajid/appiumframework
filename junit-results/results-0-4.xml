@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="1" failures="0" errors="0" skipped="0">
-  <testsuite name="Claim Free MBs in MyTelenor App" timestamp="2024-06-14T09:39:40" time="4.373" tests="1" failures="0" errors="0" skipped="0">
+<testsuites tests="1" failures="1" errors="1" skipped="0">
+  <testsuite name="Claim Free MBs in MyTelenor App" timestamp="2024-06-19T22:16:25" time="125.493" tests="1" failures="1" errors="1" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="featureName" value="Claim Free MBs in MyTelenor App"/>
       <property name="capabilities" value="android.055832505e002417"/>
       <property name="featureFile" value="file:///C:/Users/Farhat.Mehmood/Documents/appium/mta%20framework/features/freembs.feature"/>
     </properties>
-    <testcase classname="CucumberJUnitReport-android.055832505e002417.Claim Free MBs in MyTelenor App" name="Navigate to Free MBs section and claim Free MBs" time="4.363">
+    <testcase classname="CucumberJUnitReport-android.055832505e002417.Claim Free MBs in MyTelenor App" name="Navigate to Free MBs section and claim Free MBs" time="125.404">
+      <failure/>
+      <error message="Error: function timed out, ensure the promise resolves within 120000 milliseconds"/>
       <system-out><![CDATA[
-✅ When I navigate to the Free MBs section✅ Then I should be able to claim Free MBs
+✅ When I navigate to the Free MBs section❗ Then I should be able to claim Free MBs
 ]]></system-out>
+      <system-err><![CDATA[
+Error: function timed out, ensure the promise resolves within 120000 milliseconds
+    at Timeout.<anonymous> (C:\Users\Farhat.Mehmood\Documents\appium\mta framework\node_modules\@cucumber\cucumber\src\time.ts:52:14)
+    at listOnTimeout (node:internal/timers:569:17)
+    at processTimers (node:internal/timers:512:7)
+]]></system-err>
     </testcase>
   </testsuite>
 </testsuites>

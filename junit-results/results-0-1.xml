@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites tests="1" failures="0" errors="0" skipped="0">
-  <testsuite name="MyTelenor App Offers" timestamp="2024-06-14T09:37:11" time="26.612" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="MyTelenor App Offers" timestamp="2024-06-19T22:13:11" time="28.626" tests="1" failures="0" errors="0" skipped="0">
     <properties>
       <property name="specId" value="0"/>
       <property name="featureName" value="MyTelenor App Offers"/>
       <property name="capabilities" value="android.055832505e002417"/>
       <property name="featureFile" value="file:///C:/Users/Farhat.Mehmood/Documents/appium/mta%20framework/features/offers.feature"/>
     </properties>
-    <testcase classname="CucumberJUnitReport-android.055832505e002417.MyTelenor App Offers" name="Navigate to offers and activate an offer" time="26.6">
+    <testcase classname="CucumberJUnitReport-android.055832505e002417.MyTelenor App Offers" name="Navigate to offers and activate an offer" time="28.495">
       <system-out><![CDATA[
 ✅ When I navigate to the offers screen✅ And I should select the tab✅ And I should activate the offer✅ And I should confirm the offer✅ Then I should show success screen
 ]]></system-out>

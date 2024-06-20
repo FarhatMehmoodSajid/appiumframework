@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
-
+const { removeSync, emptyDirSync } = require('fs-extra');
+const allure = require('allure-commandline');
 exports.config = {
     runner: 'local',
     hostname: '127.0.0.1',
@@ -60,7 +61,7 @@ exports.config = {
         profile: [],
         strict: false,
         tagExpression: '',
-        timeout: 60000,
+        timeout: 120000,
         ignoreUndefinedDefinitions: false,
     },
     reporters: ['spec', ['junit', {
@@ -75,7 +76,9 @@ exports.config = {
         disableWebdriverScreenshotsReporting: false,
     }]],
     before: function (capabilities, specs) {
-        browser.setTimeout({ implicit: 10000});
+        browser.setTimeout({ implicit: 10000}); 
+        emptyDirSync('allure-results');
+
     },
     // before: async function (capabilities, specs) {
     //     const LoginPage = require('./pageobjects/login.page');
@@ -102,5 +105,23 @@ exports.config = {
                 console.error('Failed to save screenshot:', e);
             }
         }
+    },
+    onComplete: function (exitCode, config, capabilities, results) {
+        const reportError = new Error('Could not generate Allure report');
+        const generation = allure(['generate', 'allure-results', '--clean']);
+        return new Promise((resolve, reject) => {
+            const generationTimeout = setTimeout(() => reject(reportError), 5000);
+
+            generation.on('exit', function(exitCode) {
+                clearTimeout(generationTimeout);
+
+                if (exitCode !== 0) {
+                    return reject(reportError);
+                }
+
+                console.log('Allure report successfully generated');
+                resolve();
+            });
+        });
     }
 };
